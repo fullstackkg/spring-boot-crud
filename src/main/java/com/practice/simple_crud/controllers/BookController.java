@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class BookController {
 	@GetMapping(value="/books")
-	public String getBooks(@RequestParam String username, @RequestParam String email) {
+	public String getBooks(@RequestParam(required = false) String username, @RequestParam(required = false) String email) {
 		System.out.print("This is the username: " + username);
 		System.out.print("This is the email: " + email);
 		return "bookpage";
 	}
 }
+
