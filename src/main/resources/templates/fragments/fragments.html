@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+  
+  <nav th:fragment="navbar">
+    <ul class="navbar-links">
+      <li><a th:href="@{'/'}">Home</a></li>
+      <li><a th:href="@{'/books'}">Books</a></li>
+    </ul>
+  </nav>
+
+  <footer th:fragment="footer">
+    <p>Property of FullstackKG</p>
+  </footer>
+
+</body>
+</html>
